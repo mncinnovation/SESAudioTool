@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SESAudioTool"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "iOS SDK platforms for SES Application."
   
   spec.description  = "This SESAudioTool is audio framework to support SES Application"
@@ -23,8 +23,5 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'ffmpeg-kit-ios-audio', '4.5.LTS'
   
-  spec.pod_target_xcconfig = {
-     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-  }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.static_framework = true
 end
