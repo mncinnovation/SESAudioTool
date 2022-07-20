@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SESAudioTool"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "iOS SDK platforms for SES Application."
   
   spec.description  = "This SESAudioTool is audio framework to support SES Application"
