@@ -6,7 +6,11 @@
 	<dict>
 		<key>Headers/SESAudioEditor.h</key>
 		<data>
-		b3GtAzTXbzhVR3jJfob2+4oBaeE=
+		wmx+dm9HmgFEcUyVvyKbmsJHFt8=
+		</data>
+		<key>Headers/SESAudioEditorDelegate.h</key>
+		<data>
+		eLjlT0IAIA2fs5ID+Q0+O9OvUuI=
 		</data>
 		<key>Headers/SESAudioTool.h</key>
 		<data>
@@ -18,15 +22,23 @@
 		</data>
 		<key>Headers/SESRecorder.h</key>
 		<data>
-		/lRe5gv+F7TNIZ3Izl3LmjuUglc=
+		Ih2BAu0hX2S4R2XNngRFXaBOrm8=
+		</data>
+		<key>Headers/SESRecorderDelegate.h</key>
+		<data>
+		TSGgtEoMbcYh+iA08mJh5FVUDZU=
 		</data>
 		<key>Headers/SESSpeechToText.h</key>
 		<data>
-		qtzfIkAjijAFRHKTlnkxIDnMA9k=
+		0z1DryAG/76dtqTPVqR0R0+yGsM=
+		</data>
+		<key>Headers/SESSpeechToTextDelegate.h</key>
+		<data>
+		qyvg0oow6A32LGwCbbCi2qY4G9M=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4ikv/Jnev2sCFfZUqWyJ38Bgmro=
+		eKGjhAyO42iNDpnFX41C22EOgCI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,7 +51,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IEMvralGStLx2RQ6hE5rHuEvKE15/ZVXKhVh126aspE=
+			2jf8t0TRQj0DUKVKaQWxfzVqOEMH1Zb7V8otRdV6uPQ=
+			</data>
+		</dict>
+		<key>Headers/SESAudioEditorDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G8cgy6JEo7AdxQmt58blmi/8ZGxVzDVoTtahX1PuTiM=
 			</data>
 		</dict>
 		<key>Headers/SESAudioTool.h</key>
@@ -60,14 +79,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QKDergmbFxvAOpPcqxGdSYDdsF4aY9WTu3I5czAyF4U=
+			3dVX3J7J7rbE4pg2PO8fSIi5swYJcxYLXFwY2chXFQU=
+			</data>
+		</dict>
+		<key>Headers/SESRecorderDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NKx71wNcnzWF+royLp8ZW/DxX2bpOP6aYttHuXJfPTQ=
 			</data>
 		</dict>
 		<key>Headers/SESSpeechToText.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fdJcp9b+h1Rcm+F9eQU90mH9hd7hUHSWBmyHRUKhwqU=
+			yW2M0VTngCZYhfyJ+ZKI59tzU/0BbvveJwdS2mc1Y8Y=
+			</data>
+		</dict>
+		<key>Headers/SESSpeechToTextDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k70qbrcD+RMGAqEACAT4Dbjq0J3aJ86weyCcuY53ZvU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

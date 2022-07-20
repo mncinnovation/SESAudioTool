@@ -7,18 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import "SESAudioToolEnum.h"
+#import "SESRecorderDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@protocol SESRecorderDelegate <NSObject>
-
-- (void)recorderSuccessResult:(nonnull NSURL *)resultPath;
-- (void)recorderErrorResult:(nonnull NSError *)error;
-
-@optional
-- (void)recorderLog:(SESRecordState)state recordTime:(NSString *)recordTime;
-
-@end
 
 @interface SESRecorder : NSObject
 

@@ -7,18 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import "SESAudioToolEnum.h"
+#import "SESAudioEditorDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
-@protocol SESAudioEditorDelegate <NSObject>
-
-- (void)audioEditSuccess:(SESAudioProcessStep)step resultURL:(nonnull NSURL *)result;
-- (void)audioEditError:(SESAudioProcessStep)step error:(nonnull NSError *)error;
-
-@optional
-- (void)audioEditLog:(SESAudioProcessStep)step logMessage:(nonnull NSString *)message;
-- (void)audioEditProgress:(SESAudioProcessStep)step percentage:(int)percentage;
-
-@end
 
 @interface SESAudioEditor : NSObject
 

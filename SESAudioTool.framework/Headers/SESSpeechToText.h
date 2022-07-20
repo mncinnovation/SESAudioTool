@@ -8,16 +8,9 @@
 #import <Foundation/Foundation.h>
 #import <Speech/Speech.h>
 #import "SESAudioToolEnum.h"
+#import "SESSpeechToTextDelegate.h""
 
 NS_ASSUME_NONNULL_BEGIN
-
-@protocol SESSpeechToTextDelegate <NSObject>
-
-- (void)speechToTextRequestResult:(SFSpeechRecognizerAuthorizationStatus)status;
-- (void)speechToTextSuccessResult:(nonnull NSString *)text;
-- (void)speechToTextErrorResult:(nonnull NSError *)errorMessage;
-
-@end
 
 @interface SESSpeechToText : NSObject
 
