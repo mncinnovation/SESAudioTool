@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SESAudioTool"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "iOS SDK platforms for SES Application."
   
   spec.description  = "This SESAudioTool is audio framework to support SES Application"
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/mncinnovation/SESAudioTool.git", :tag => "#{spec.version}" }
 
-  spec.vendored_frameworks = "SESAudioTool.framework"
+  spec.vendored_frameworks = "SESAudioTool.xcframework"
 
   spec.framework  = "UIKit"
 

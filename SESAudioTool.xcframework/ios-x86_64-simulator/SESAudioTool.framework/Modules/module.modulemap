@@ -1,0 +1,6 @@
+framework module SESAudioTool {
+  umbrella header "SESAudioTool.h"
+
+  export *
+  module * { export * }
+}
