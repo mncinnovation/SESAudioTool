@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)audioEditError:(SESAudioProcessStep)step error:(nonnull NSError *)error;
 
 @optional
-- (void)audioEditLog:(SESAudioProcessStep)step logMessage:(nonnull NSString *)message;
 - (void)audioEditProgress:(SESAudioProcessStep)step percentage:(int)percentage;
 
 @end
