@@ -13,12 +13,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SESAudioEditor : NSObject
 
+typedef void(^audioCompletion)(NSURL * __nullable result, NSError * __nullable error);
+typedef void(^audioProgress)(int percentage);
+
+
 @property (weak, nonatomic) id <SESAudioEditorDelegate> delegate;
+@property (nonatomic) NSURL * destinationFolder;
 
 - (void)trimAudio:(nonnull NSURL *)urlPath start:(nonnull NSString *)startTime duration:(nonnull NSString *)duration;
-- (void)reduceNoice:(nonnull NSURL *)urlPath;
-- (void)convertAudio:(nonnull NSURL *)urlPath to:(SESAudioFormat)audioFormat;
+- (void)trimAudio:(nonnull NSURL *)urlPath start:(nonnull NSString *)startTime duration:(nonnull NSString *)duration withCompletion:(nullable audioCompletion)completion;
+- (void)trimAudio:(nonnull NSURL *)urlPath start:(nonnull NSString *)startTime duration:(nonnull NSString *)duration withCompletion:(nullable audioCompletion)completion withProgressPercentage:(nullable audioProgress)progressPercentage;
 
+- (void)reduceNoice:(nonnull NSURL *)urlPath;
+- (void)reduceNoice:(nonnull NSURL *)urlPath withCompletion:(nullable audioCompletion)completion;
+- (void)reduceNoice:(nonnull NSURL *)urlPath withCompletion:(nullable audioCompletion)completion withProgressPercentage:(nullable audioProgress)progressPercentage;
+
+- (void)convertAudio:(nonnull NSURL *)urlPath to:(SESAudioFormat)audioFormat;
+- (void)convertAudio:(nonnull NSURL *)urlPath to:(SESAudioFormat)audioFormat withCompletion:(nullable audioCompletion)completion;
+- (void)convertAudio:(nonnull NSURL *)urlPath to:(SESAudioFormat)audioFormat withCompletion:(nullable audioCompletion)completion withProgressPercentage:(nullable audioProgress)progressPercentage;
+ 
 @end
 
 NS_ASSUME_NONNULL_END
