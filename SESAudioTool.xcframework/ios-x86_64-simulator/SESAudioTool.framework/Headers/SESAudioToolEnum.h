@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, SESAudioProcessStep) {
     TRIMMING,
     REDUCE_NOICE,
-    CONVERT
+    CONVERT,
+    TUNER
 };
 
 typedef NS_ENUM(NSUInteger, SESLanguangeToTranscribe) {
@@ -29,7 +30,16 @@ typedef NS_ENUM(NSUInteger, SESAudioFormat) {
     WAV,
     AIFF,
     OGG,
-    PCM
+    OPUS,
+    AC3,
+};
+
+typedef NS_ENUM(NSUInteger, SESAudioTuner) {
+    ROBOT,
+    MOUNTAIN,
+    INDOOR,
+    SHIVER,
+    CHIPMUNK
 };
 
 typedef NS_ENUM(NSUInteger, SESRecordState) {

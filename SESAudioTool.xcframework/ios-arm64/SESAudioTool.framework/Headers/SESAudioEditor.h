@@ -31,6 +31,10 @@ typedef void(^audioProgress)(int percentage);
 - (void)convertAudio:(nonnull NSURL *)urlPath to:(SESAudioFormat)audioFormat;
 - (void)convertAudio:(nonnull NSURL *)urlPath to:(SESAudioFormat)audioFormat withCompletion:(nullable audioCompletion)completion;
 - (void)convertAudio:(nonnull NSURL *)urlPath to:(SESAudioFormat)audioFormat withCompletion:(nullable audioCompletion)completion withProgressPercentage:(nullable audioProgress)progressPercentage;
+
+- (void)tuneAudio:(nonnull NSURL *)urlPath to:(SESAudioTuner)audioFormat;
+- (void)tuneAudio:(nonnull NSURL *)urlPath to:(SESAudioTuner)audioFormat withCompletion:(nullable audioCompletion)completion;
+- (void)tuneAudio:(nonnull NSURL *)urlPath to:(SESAudioTuner)audioFormat withCompletion:(nullable audioCompletion)completion withProgressPercentage:(nullable audioProgress)progressPercentage;
  
 @end
 
