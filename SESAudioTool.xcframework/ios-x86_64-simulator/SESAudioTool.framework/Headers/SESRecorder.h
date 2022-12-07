@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)startRecording;
 - (void)pauseRecoding;
 - (void)finishRecording;
+- (float)lastAveragePower;
 
 
 @end
